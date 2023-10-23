@@ -8,11 +8,11 @@ async function loadFakeData(numUsers: number = 10) {
   console.log(`executing load fake data. generating ${numUsers} users.`);
 
   const client = new Client({
-    user: "postgres",
-    host: "localhost",
-    database: "strings_app",
-    password: "Thaaamer",
-    port: 5432,
+    user: process.env.POSTGRES_USER,
+    host: process.env.POSTGRES_HOST,
+    database: process.env.POSTGRES_NAME,
+    password: process.env.POSTGRES_PASSWORD,
+    port: parseInt(process.env.POSTGRES_PORT!),
   });
 
   await client.connect();
