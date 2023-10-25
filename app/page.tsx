@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex min-h-screen items-center justify-center">
       <div className="text-white flex flex-col gap-2 p-5 max-w-xs w-full bg-slate-800 rounded-lg">
         <div className="text-center my-4">
-          <h1>sss</h1>
+          <h1>Sign In</h1>
         </div>
         <div>
           <Link
