@@ -9,14 +9,16 @@ export default function Form() {
   const [confirmPassword, setConfirmPassword] = useState<undefined | string>(
     ""
   );
-  const [error, setError] = useState<string[]>([]);
+  const [errors, setErrors] = useState<string[]>([]);
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    setError([]);
+    setErrors([]);
 
     if (password !== confirmPassword) {
-      error.push("Password do not match.");
+      const newErrors = [];
+      newErrors.push("Password do not match.");
+      setErrors(newErrors);
       return;
     }
 
@@ -86,6 +88,13 @@ export default function Form() {
       >
         Sign Up
       </button>
+      {errors.map((error) => {
+        return (
+          <div key={error} className="text-red-600">
+            {error}
+          </div>
+        );
+      })}
     </form>
   );
 }
