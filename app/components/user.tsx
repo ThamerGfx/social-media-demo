@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-//https://avatars.githubusercontent.com/u/49210489
-
 export default function User({ user, href }: { user: UserI; href?: string }) {
   return (
     <div>
