@@ -5,8 +5,6 @@ const projectDir = process.cwd();
 loadEnvConfig(projectDir);
 
 export async function getClient(): Promise<Client> {
-  console.log(process.env.POSTGRES_URL);
-
   if (process.env.POSTGRES_URL) {
     const client = new Client({
       connectionString: process.env.POSTGRES_URL + "?sslmode=require",
