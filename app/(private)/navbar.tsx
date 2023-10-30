@@ -12,7 +12,7 @@ export default function NavBar() {
           <Link href="/profile">Profile</Link>
         </li>
         <li>
-          <Link href="/followings">Following</Link>
+          <Link href="/following">Following</Link>
         </li>
         <li>
           <Link href="/followers">Followers</Link>
