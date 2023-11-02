@@ -1,5 +1,13 @@
+"use client";
+
 import React from "react";
+import FollowersContainer from "./followers-container";
 
 export default function Followers() {
-  return <div>Followers</div>;
+  return (
+    <div>
+      <h2>Followers</h2>
+      <FollowersContainer />
+    </div>
+  );
 }
