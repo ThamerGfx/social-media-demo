@@ -1,4 +1,4 @@
-import Post from "@/app/components/Post.1";
+import { Post } from "@/app/components/post";
 import React from "react";
 import useSWR from "swr";
 
