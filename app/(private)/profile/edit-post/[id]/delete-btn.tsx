@@ -15,9 +15,6 @@ export default function DeleteBtn({ post }: { post: PostI }) {
   }
 
   function handleClick() {
-    // const newState = Object.assign({}, state, {
-    //   showConfirm: !state.showConfirm,
-    // });
     setState({ ...state, showConfirm: !state.showConfirm });
   }
 
